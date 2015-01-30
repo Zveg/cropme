@@ -91,9 +91,9 @@
           if (scope.ratio && scope.height && scope.destinationHeight > scope.height) {
             throw "Can't initialize cropme: destinationWidth x ratio needs to be lower than height";
           }
-          if (scope.destinationWidth > scope.width) {
+          /*if (scope.destinationWidth > scope.width) {
             throw "Can't initialize cropme: destinationWidth needs to be lower than width";
-          }
+          }*/
           if (scope.ratio && !scope.height) {
             scope.height = scope.width * scope.ratio;
           }
