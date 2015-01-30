@@ -67,7 +67,9 @@
           scope.widthCropZone = Math.round(scope.destinationWidth * zoom);
           scope.heightCropZone = Math.round((scope.destinationHeight || minHeight) * zoom);
           scope.xCropZone = Math.round((scope.width - scope.widthCropZone) / 2);
-          scope.yCropZone = Math.round((scope.height - scope.heightCropZone) / 2);
+          // Quick fix because for horizontal images crop area under the line
+          scope.yCropZone = 0;
+          //scope.yCropZone = Math.round((scope.height - scope.heightCropZone) / 2);
           return $timeout(function() {
             return elOffset = elementOffset(imageAreaEl);
           });
