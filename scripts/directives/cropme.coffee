@@ -106,8 +106,6 @@ angular.module("cropme").directive "cropme", ($swipe, $window, $timeout, $rootSc
 				scope.destinationHeight = scope.destinationWidth * scope.ratio
 			if scope.ratio and scope.height and scope.destinationHeight > scope.height
 				throw "Can't initialize cropme: destinationWidth x ratio needs to be lower than height"
-			if scope.destinationWidth > scope.width
-				throw "Can't initialize cropme: destinationWidth needs to be lower than width"
 			if scope.ratio and not scope.height
 				scope.height = scope.width * scope.ratio
 			scope.type ||= "png"
