@@ -5,7 +5,7 @@
   "homepage": "http://github.com/standup75/cropme",
   "repository": {
     "type": "git",
-    "url": "git://github.com/standup75/cropme.git"
+    "url": "https://github.com/Zveg/cropme.git"
   },
   "main": [
     "./cropme.js",
